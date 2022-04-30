@@ -31,9 +31,5 @@ public class NewBehaviourScript : MonoBehaviour
         {
             rb.velocity = Vector3.right * speed;
         }
-        else if (Input.GetKeyDown("space"))
-        {
-            rb.velocity = Vector3.up * speed;
-        }
     }
 }
