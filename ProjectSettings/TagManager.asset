@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Enemy
   - MazeGeo
+  - PowerPellet
+  - ScoreText
   layers:
   - Default
   - TransparentFX
