@@ -14,7 +14,7 @@ public class PowerPelletScript : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag.Equals("PacMan"))
+        if(collision.gameObject.tag.Equals("Player"))
         {
             Destroy(this.gameObject);
         }
