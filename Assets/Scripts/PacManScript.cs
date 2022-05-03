@@ -27,13 +27,14 @@ public class PacManScript : MonoBehaviour
     void Start()
     {
         this.theScoreTextMesh.text = "Score: " + count;
+
     }
 
     void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag.Equals("PowerPellet"))
         {
-            Destroy(powerPellet);
+            Destroy(this.powerPellet);
             count++;
             this.theScoreTextMesh.text = "Score: " + count;
         }

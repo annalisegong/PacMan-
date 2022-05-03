@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class PowerPelletScript : MonoBehaviour
 {
-    private int count;
     private Rigidbody rb;
-     public GameObject powerPellet;
+    public GameObject powerPellet;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +17,6 @@ public class PowerPelletScript : MonoBehaviour
         if(collision.gameObject.tag.Equals("PacMan"))
         {
             Destroy(this.gameObject);
-            count++;
         }
     }
 

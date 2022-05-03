@@ -8,6 +8,9 @@ TagManager:
   - MazeGeo
   - PowerPellet
   - ScoreText
+  - PacMan
+  - RExitTrigger
+  - LExitTrigger
   layers:
   - Default
   - TransparentFX
