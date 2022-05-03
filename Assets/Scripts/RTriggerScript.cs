@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RTriggerScript : MonoBehaviour
 {
-    public Transform PacMan;
+    public Transform PacManPrefab;
     public Transform LspawnPoint;
 
     // Start is called before the first frame update
@@ -15,7 +15,7 @@ public class RTriggerScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Transform t = Instantiate(PacMan, LspawnPoint.position, Quaternion.identity);
+        Transform t = Instantiate(PacManPrefab, LspawnPoint.position, Quaternion.identity);
         Rigidbody rb = t.GetComponent<Rigidbody>();
     }
 

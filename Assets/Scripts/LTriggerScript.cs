@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class LTriggerScript : MonoBehaviour
 {
-    public Transform PacMan;
+    public GameObject thePacMan;
+    public Transform PacManPrefab;
     public Transform RspawnPoint;
     // Start is called before the first frame update
     void Start()
@@ -14,8 +15,9 @@ public class LTriggerScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Transform t = Instantiate(PacMan, RspawnPoint.position, Quaternion.identity);
+        Transform t = Instantiate(PacManPrefab, RspawnPoint.position, Quaternion.identity);
         Rigidbody rb = t.GetComponent<Rigidbody>();
+        Destroy(thePacMan);
     }
 
     // Update is called once per frame
