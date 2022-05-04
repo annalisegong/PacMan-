@@ -27,17 +27,6 @@ public class PacManScript : MonoBehaviour
     void Start()
     {
         this.theScoreTextMesh.text = "Score: " + count;
-
-    }
-
-    void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject.tag.Equals("PowerPellet"))
-        {
-            Destroy(this.powerPellet);
-            count++;
-            this.theScoreTextMesh.text = "Score: " + count;
-        }
     }
 
     // Update is called once per frame

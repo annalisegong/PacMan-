@@ -2,20 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PowerPelletScript : MonoBehaviour
+public class PelletKillScript : MonoBehaviour
 {
-    private Rigidbody rb;
-    public GameObject powerPellet;
     // Start is called before the first frame update
     void Start()
     {
-        rb = this.gameObject.GetComponent<Rigidbody>();
+        
     }
-
-    void OnCollisionEnter(Collision collision)
+    
+    private void OnTriggerEnter(Collider other)
     {
-        if(collision.gameObject.tag.Equals("Player"))
+        if(other.gameObject.tag.Equals("Player"))
         {
+            CORE.score++;
             Destroy(this.gameObject);
         }
     }
