@@ -297,8 +297,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 721ec23908b464ebf94d28835bcf34ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PacMan: {fileID: 1162029125}
-  LspawnPoint: {fileID: 1014384804}
+  RSpawnPoint: {fileID: 1558231595}
+  LSpawnPoint: {fileID: 1014384804}
+  Player: {fileID: 1162029120}
 --- !u!1001 &269706126
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -943,7 +944,7 @@ GameObject:
   - component: {fileID: 1014384804}
   m_Layer: 0
   m_Name: LSpawnPoint
-  m_TagString: Untagged
+  m_TagString: LSpawnPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1041,12 +1042,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!4 &1162029125 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7308235905142051746, guid: d33249e5ae722fb40ad2807c439696d9,
-    type: 3}
-  m_PrefabInstance: {fileID: 269706126}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1352649780 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1189647692537122, guid: 296eeb3b9bc02fb44927747cd46985d7,
@@ -1196,11 +1191,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1546029807}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 848e0ee04c4444aeaa4bcdad63d496b6, type: 3}
+  m_Script: {fileID: 11500000, guid: 721ec23908b464ebf94d28835bcf34ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PacMan: {fileID: 1162029125}
-  RspawnPoint: {fileID: 1558231595}
+  RSpawnPoint: {fileID: 1558231595}
+  LSpawnPoint: {fileID: 1014384804}
+  Player: {fileID: 1162029120}
 --- !u!65 &1546029809
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1288,7 +1284,7 @@ GameObject:
   - component: {fileID: 1558231595}
   m_Layer: 0
   m_Name: RSpawnPoint
-  m_TagString: Untagged
+  m_TagString: RSpawnPoint
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

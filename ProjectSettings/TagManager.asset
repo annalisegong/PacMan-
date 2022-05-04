@@ -11,6 +11,8 @@ TagManager:
   - PacMan
   - RExitTrigger
   - LExitTrigger
+  - LSpawnPoint
+  - RSpawnPoint
   layers:
   - Default
   - TransparentFX
