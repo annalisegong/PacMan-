@@ -5,14 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
-  - MazeGeo
   - PowerPellet
   - ScoreText
   - PacMan
-  - RExitTrigger
-  - LExitTrigger
   - LSpawnPoint
   - RSpawnPoint
+  - ghost
   layers:
   - Default
   - TransparentFX
